@@ -10,6 +10,7 @@ const usuarisGet = async (req = request, res = response) => {
   });
 };
 
+
 const usuarisPost = async (req, res = response) => {
   const { nom, estat, correu, password, rol, google } = req.body;
   const usuari = new Usuari({
